@@ -4,7 +4,6 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 
 
-
 class App extends React.Component {
   state = {
     data: {},
@@ -28,6 +27,7 @@ class App extends React.Component {
     const { data, country } = this.state;
 
     return (
+      
       <div className={styles.container}>
         
         <h1><font size = "7">Covid-19 Tracker</font><hr/></h1>
