@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../Card";
 
+
 const Global = () => {
-  const [world, setWorld] = useState({confirm:NaN,death:NaN,recovered:NaN})
+  const [world, setWorld] = useState({confirm:[0],death:[0],recovered:[0]})
 
   useEffect(() => {
     axios
@@ -22,7 +23,8 @@ const Global = () => {
   return (
     <center>
       <div className="container">
-      <h2>Global</h2>
+        
+      <h1>GLOBAL</h1>
       < br/>
       <Card confirm={world.confirm} recovered={world.recovered} death={world.death} />
     </div>

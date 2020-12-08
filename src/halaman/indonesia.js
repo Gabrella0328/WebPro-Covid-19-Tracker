@@ -3,7 +3,7 @@ import axios from 'axios'
 import Card from "../Card"
 
 const Indonesia =()=> {
-  const [indo, setIndo] = useState({confirm:NaN,death:NaN,recovered:NaN})
+  const [indo, setIndo] = useState({confirm:[0],death:[0],recovered:[0]})
 
   useEffect(() => {
     axios.get("https://indonesia-covid-19.mathdro.id/api")
@@ -22,7 +22,7 @@ const Indonesia =()=> {
   return (
     <div className='container'>
       <center>
-      <h2>Indonesia</h2>
+      <h1>INDONESIA</h1>
       
       <br/>
       <Card 

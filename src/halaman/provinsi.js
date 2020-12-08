@@ -16,12 +16,14 @@ const Provinsi =()=> {
   return (
   
     <div className='container'>
-      
+      <center>
       <h1>Provinsi di Indonesia</h1>
       <h3>Jumlah kasus setiap provinsi di Indonesia</h3>
       <div className='container'>
         <Table prov={prov} />
+        
       </div>
+      </center>
     </div>
   );
 }
