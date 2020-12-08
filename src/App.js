@@ -1,25 +1,25 @@
-import React from 'react';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
-import App from "./global/App.js";
-import App from "./indonesia/App.js";
-import App from "./provinsi/App.js";
+import {Route, Switch} from 'react-router-dom';
+import global from './halaman/global';
+import indonesia from './halaman/indonesia';
+import provinsi from './halaman/provinsi';
+import negara from './halaman/negara';
+import Navbar from './navbar';
+import Home from './halaman/home';
 
-const Home = () => {
-    return (
-        <BrowserRouter>
-            <Switch>
-                <Route path = "/global">
-                    <App />
-                </Route>
-                <Route path = "indonesia">
-                    <App />
-                </Route>
-                <Route path = "provinsi">
-                    <App />
-                </Route>
-            </Switch>
-        </BrowserRouter>
-    );
-};
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Switch>
+        <Route exact path ='/' component={Home}/>
+        <Route path ='/global' component={global}/>
+        <Route path ='/indonesia' component={indonesia}/>
+        <Route path ='/provinsi' component={provinsi}/>
+        <Route path ='/negara/:id' component={negara}/>
+      </Switch>
+     
+    </div>
+  );
+}
 
-export default Home;
+export default App;
