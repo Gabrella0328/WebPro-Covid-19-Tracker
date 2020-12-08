@@ -2,9 +2,8 @@ import { Link } from 'react-router-dom'
 
 const navbar = () => {
   return (
-      <div>
     <div>
-      
+    <div>
       <font size = "4">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -124,6 +123,7 @@ const navbar = () => {
       <marquee bgcolor="black" direction="right" >
         <font color="white">Stay Safe and Keep Health</font>
       </marquee>
+      
     </font>
     </div>
     </div>
